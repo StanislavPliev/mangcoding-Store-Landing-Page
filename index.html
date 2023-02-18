@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mangcoding Store</title>
+
+  <!-- Roboto 700 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Poppins 400 & 700 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Inter 400 & 700 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Mada 700 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mada:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="css/slick.css">
+  
+  <!-- Reset CSS & Styles -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <!-- log-in modal windows STARTS -->
+  <div class="log-in-modal" id="js-log-in-modal">
+    <div class="modal-window">
+      <span class="modal-window__title">Log in</span>
+      <img class="modal-window__close-btn" id="js-close-modal-btn" src="resources/img/close-modal.svg" alt="Close">
+      <input class="modal-window__field" id="js-modal-window-username-field" type="text" placeholder="Username or E-mail">
+      <input class="modal-window__field" id="js-modal-window-password-field" type="password" placeholder="Password">
+      <button class="modal-window__btn" id="js-modal-log-in-btn">Log in</button>
+    </div>
+  </div>
+  <!-- log-in modal windows ENDS -->
+
+  <!-- register modal window STARTS -->
+  <div class="register-modal" id="js-register-modal">
+    <div class="modal-window">
+      <span class="modal-window__title">Register</span>
+      <img class="modal-window__close-btn" id="js-close-reg-modal-btn" src="resources/img/close-modal.svg" alt="Close">
+      <input class="modal-window__field" id="js-reg-modal-username" type="text" placeholder="Username">
+      <input class="modal-window__field" id="js-reg-modal-email" type="email" placeholder="E-mail">
+      <input class="modal-window__field" id="js-reg-modal-password" type="password" placeholder="Password">
+      <button class="modal-window__btn" id="js-modal-reg-btn">Register</button>
+    </div>
+  </div>
+  <!-- register modal window ENDS -->
+
+  <header class="header">
+    <div class="header__nav-bar nav-bar">
+      <div class="nav-bar__logo logo">
+        <img class="logo__img" src="resources/img/logo.svg" alt="mangcoding Store Logotype">
+        <span class="logo__text">mangcoding Store</span>
+      </div>
+
+      <div class="nav-bar__right-side">
+        <nav class="nav-bar__links nav">
+          <a class="nav__link active" href="#home">Home</a>
+          <a class="nav__link" href="#courses">Courses</a>
+          <a class="nav__link" href="#about-us">About Us</a>
+          <a class="nav__link" href="#article">Article</a>
+          <a class="nav__link" href="#contacts">Contacts</a>
+        </nav>
+        
+        <div class="nav-bar__auth-btns">
+          <button class="log-in-btn" id="js-log-in-btn">Log in</button>
+          <button class="register-btn" id="js-register-btn">Register</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main__lets-begin lets-begin" id="home">
+      <div class="lets-begin__left-column left-column">
+        <span class="left-column__tagline">
+          Let's <span class="bolder-text">Begin</span>
+        </span>
+        <h1 class="left-column__title">
+          Let&rsquo;s Find The Right <span class="blue-colored-text">Course</span> for you
+        </h1>
+        <p class="left-column__descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.
+        </p>
+
+        <div class="left-column__btns">
+          <button class="register-btn" id="js-lower-reg-btn">Register</button>
+          <button class="play-video-btn">
+            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16.6327" cy="16" r="16" fill="#F0C932"/>
+              <path d="M23.8827 16L13.3827 22.0622V9.93782L23.8827 16Z" fill="white"/>
+            </svg>
+            <span class="play-video-btn__text">Play Video</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="lets-begin__right-column right-column">
+        <img src="resources/img/lets-begin.svg" alt="Let's Begin">
+      </div>
+    </section>
+
+    <section class="main__what-we-give what-we-give" id="product">
+      <div class="what-we-give__left-column">
+        <span class="what-we-give__tagline">What we give</span>
+        <h2 class="what-we-give__title">What Do You <br> Get From Us</h2>
+        <p class="what-we-give__descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.
+        </p>
+      </div>
+
+      <div class="what-we-give__right-column">
+        <div class="right-column__box box">
+          <img class="box__img" src="resources/img/prof-teacher.svg" alt="Professional Teachers">
+          <br>
+          <h3 class="box__benefit">Professional Teachers</h3>
+          <p class="box__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.
+          </p>
+        </div>
+
+        <div class="right-column__box box">
+          <img class="box__img" src="resources/img/course-certif.svg" alt="Course Certificate">
+          <br>
+          <h3 class="box__benefit">Course Certificate</h3>
+          <p class="box__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.
+          </p>
+        </div>
+
+        <div class="right-column__box box">
+          <img class="box__img" src="resources/img/inter-learn.svg" alt="Interesting Learning">
+          <br>
+          <h3 class="box__benefit">Interesting Learning</h3>
+          <p class="box__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.
+          </p>
+        </div>
+
+        <div class="right-column__box box last">
+          <img class="box__img" src="resources/img/video-courses.svg" alt="120 Video Courses">
+          <br>
+          <h3 class="box__benefit">120 Video Courses</h3>
+          <p class="box__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__selected-course selected-course" id="article">
+      <div class="selected-course__wrapper">
+        <div class="selected-course__left-column">
+          <img src="resources/img/selected-course.svg" alt="Selected Course">
+        </div>
+
+        <div class="selected-course__right-column right-column">
+          <span class="right-column__title">Selected Course</span>
+          <h3 class="right-column__tagline">People Taking Courses</h3>
+          <p class="right-column__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.
+          </p>
+
+          <div class="right-column__additional-info additional-info">
+            <div class="additional-info__box">
+              <span class="additional-info__above">6,000</span>
+              <p class="additional-info__below">People Views</p>
+            </div>
+            
+            <div class="additional-info__box">
+              <span class="additional-info__above">4,000</span>
+              <p class="additional-info__below">Users</p>
+            </div>
+
+            <div class="additional-info__box">
+              <span class="additional-info__above">100</span>
+              <p class="additional-info__below">Courses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="available-for-you" id="courses">
+      <div class="available-for-you__wrapper">
+        <div class="afy-left-column">
+          <div class="afy-left-column__box afy-box" id="html-css">
+            <div class="afy-box__course-wrapper">
+              <div class="afy-box__img html-css"></div>
+              <span class="afy-box__best-course">Best Course</span>
+              <span class="afy-box__price">$&nbsp;20&nbsp;USD</span>
+            </div>
+            
+            <div class="afy-box__bottom-info-block">
+              <div class="above">
+                <span class="above__title">HTML & CSS</span>
+                <span class="above__views">1,500 Views</span>
+              </div>
+
+              <div class="below">
+                <span class="below__videos">120 Videos</span>
+                <span class="below__teachers">2 Teachers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="afy-left-column__box afy-box" id="javascript">
+            <div class="afy-box__course-wrapper">
+              <div class="afy-box__img javascript"></div>
+              <span class="afy-box__best-course">Best Course</span>
+              <span class="afy-box__price">$&nbsp;20&nbsp;USD</span>
+            </div>
+            
+            <div class="afy-box__bottom-info-block">
+              <div class="above">
+                <span class="above__title">Javascript</span>
+                <span class="above__views">1,500 Views</span>
+              </div>
+
+              <div class="below">
+                <span class="below__videos">120 Videos</span>
+                <span class="below__teachers">2 Teachers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="afy-left-column__box afy-box" id="photographer">
+            <div class="afy-box__course-wrapper">
+              <div class="afy-box__img photographer"></div>
+              <span class="afy-box__best-course">Best Course</span>
+              <span class="afy-box__price">$&nbsp;20&nbsp;USD</span>
+            </div>
+            
+            <div class="afy-box__bottom-info-block">
+              <div class="above">
+                <span class="above__title">Photographer</span>
+                <span class="above__views">1,500 Views</span>
+              </div>
+
+              <div class="below">
+                <span class="below__videos">100 Videos</span>
+                <span class="below__teachers">2 Teachers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="afy-left-column__box afy-box" id="design-graphics">
+            <div class="afy-box__course-wrapper">
+              <div class="afy-box__img design-graphics"></div>
+              <span class="afy-box__best-course">Best Course</span>
+              <span class="afy-box__price">$&nbsp;20&nbsp;USD</span>
+            </div>
+            
+            <div class="afy-box__bottom-info-block">
+              <div class="above">
+                <span class="above__title">Design Graphics</span>
+                <span class="above__views">1,500 Views</span>
+              </div>
+
+              <div class="below">
+                <span class="below__videos">120 Videos</span>
+                <span class="below__teachers">2 Teachers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="afy-right-column">
+          <span class="afy-right-column__title">Available for you</span>
+          <h3 class="afy-right-column__tagline">Available Courses</h3>
+          <p class="afy-right-column__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, sem non convallis molestie.
+          </p>
+          <button class="afy-right-column__see-all-btn" id="js-see-all-btn">
+            See all
+          </button>
+        </div>
+      </div>
+
+      <!-- see all modal window STARTS -->
+      <div class="see-all-modal" id="js-see-all-modal">
+        <div class="see-all-modal-window">
+          <span class="see-all-modal__title">Our courses</span>
+          <img class="see-all-modal__close-btn" id="js-close-courses-modal" src="resources/img/close-modal.svg" alt="Close">
+          <div class="afy-left-column__box afy-box">
+            <div class="afy-box__course-wrapper">
+              <div class="afy-box__img html-css"></div>
+              <span class="afy-box__best-course">Best Course</span>
+              <span class="afy-box__price">$&nbsp;20&nbsp;USD</span>
+            </div>
+            
+            <div class="afy-box__bottom-info-block">
+              <div class="above">
+                <span class="above__title">HTML & CSS</span>
+                <span class="above__views">1,500 Views</span>
+              </div>
+
+              <div class="below">
+                <span class="below__videos">120 Videos</span>
+                <span class="below__teachers">2 Teachers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="afy-left-column__box afy-box">
+            <div class="afy-box__course-wrapper">
+              <div class="afy-box__img javascript"></div>
+              <span class="afy-box__best-course">Best Course</span>
+              <span class="afy-box__price">$&nbsp;20&nbsp;USD</span>
+            </div>
+            
+            <div class="afy-box__bottom-info-block">
+              <div class="above">
+                <span class="above__title">Javascript</span>
+                <span class="above__views">1,500 Views</span>
+              </div>
+
+              <div class="below">
+                <span class="below__videos">120 Videos</span>
+                <span class="below__teachers">2 Teachers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="afy-left-column__box afy-box">
+            <div class="afy-box__course-wrapper">
+              <div class="afy-box__img photographer"></div>
+              <span class="afy-box__best-course">Best Course</span>
+              <span class="afy-box__price">$&nbsp;20&nbsp;USD</span>
+            </div>
+            
+            <div class="afy-box__bottom-info-block">
+              <div class="above">
+                <span class="above__title">Photographer</span>
+                <span class="above__views">1,500 Views</span>
+              </div>
+
+              <div class="below">
+                <span class="below__videos">100 Videos</span>
+                <span class="below__teachers">2 Teachers</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="afy-left-column__box afy-box">
+            <div class="afy-box__course-wrapper">
+              <div class="afy-box__img design-graphics"></div>
+              <span class="afy-box__best-course">Best Course</span>
+              <span class="afy-box__price">$&nbsp;20&nbsp;USD</span>
+            </div>
+            
+            <div class="afy-box__bottom-info-block">
+              <div class="above">
+                <span class="above__title">Design Graphics</span>
+                <span class="above__views">1,500 Views</span>
+              </div>
+
+              <div class="below">
+                <span class="below__videos">120 Videos</span>
+                <span class="below__teachers">2 Teachers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- see all modal window ENDS -->
+    </section>
+
+    <section class="testimonials" id="about-us">
+      <h3 class="testimonials__title">
+        Testimonials
+      </h3>
+
+      <div class="testimonials__rating rating">
+        <div class="rating__one">
+          <img class="rating__angle" src="resources/img/angle.svg" alt="">
+          <div class="client-info">
+            <img class="client-info__img" src="resources/img/friskidia.svg" alt="Friskidia, Client">
+
+            <div class="client-info__extra-info">
+              <span class="client-info__name">Friskidia</span>
+              <span class="client-info__role">Client</span>
+            </div>
+          </div>
+
+          <img class="rating__stars" src="resources/img/rating.svg" alt="Our client rating">
+
+          <div class="client-comment">
+            <span class="quotation-mark">&quot;</span>
+            <p class="quote">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus. &quot;
+            </p>
+          </div>
+        </div>
+        
+        <div class="rating__two">
+          <img class="rating__angle" src="resources/img/angle.svg" alt="">
+          <div class="client-info">
+            <img class="client-info__img" src="resources/img/finkidia.svg" alt="Finkidia, Client">
+
+            <div class="client-info__extra-info">
+              <span class="client-info__name">Finkidia</span>
+              <span class="client-info__role">Client</span>
+            </div>
+          </div>
+
+          <img class="rating__stars" src="resources/img/rating.svg" alt="Our client rating">
+
+          <div class="client-comment">
+            <span class="quotation-mark">&quot;</span>
+            <p class="quote">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus. &quot;
+            </p>
+          </div>
+        </div>
+          
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="footer__wrapper">
+      <div class="footer__left-column">
+        <div class="footer__logo">
+          <img src="resources/img/logo.svg" alt="mangcoding Store Logotype">
+          <p class="logo-text">mangcoding Store</p>
+        </div>
+
+        <p class="footer__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis, justo nec porttitor auctor, erat sapien faucibus lectus, vel tempor dolor augue et&nbsp;lectus. 
+        </p>
+
+        <div class="footer__socials socials">
+          <a class="socials__link" href="#">
+            <img src="resources/img/facebok.svg" alt="Facebook">
+          </a>
+          <a class="socials__link" href="#">
+            <img src="resources/img/twitter.svg" alt="Twitter">
+          </a>
+          <a class="socials__link" href="#">
+            <img src="resources/img/linkedin.svg" alt="Linkedin">
+          </a>
+          <a class="socials__link" href="#">
+            <img src="resources/img/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__right-column">
+        <div class="footer__nav">
+          <div class="footer__nav-container">
+            <h3 class="footer__nav-title">
+              Home
+            </h3>
+
+            <div class="footer__nav-links">
+              <a class="footer__nav-link" href="#product">
+                Product
+              </a>
+              <a class="footer__nav-link" href="#courses">
+                Courses
+              </a>
+              <a class="footer__nav-link" href="#about-us">
+                About Us
+              </a>
+              <a class="footer__nav-link" href="#">
+                Log in
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__nav-container">
+            <h3 class="footer__nav-title">
+              Courses
+            </h3>
+
+            <div class="footer__nav-links">
+              <a class="footer__nav-link" id="html-css-link" href="#html-css">
+                HTML & CSS
+              </a>
+              <a class="footer__nav-link" id="javascript-link" href="#javascript">
+                Javascript
+              </a>
+              <a class="footer__nav-link" id="photographer-link" href="#photographer">
+                Photographer
+              </a>
+              <a class="footer__nav-link" id="design-graphics-link" href="#design-graphics">
+                Design Graphics
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__nav-container">
+            <h3 class="footer__nav-title">
+              Articles
+            </h3>
+
+            <div class="footer__nav-links">
+              <a class="footer__nav-link" href="#article">
+                New
+              </a>
+              <a class="footer__nav-link" href="#article">
+                Old
+              </a>
+              <a class="footer__nav-link" href="#article">
+                Trend
+              </a>
+              <a class="footer__nav-link" href="#article">
+                Popular
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__nav-container">
+            <h3 class="footer__nav-title">
+              Contact us
+            </h3>
+
+            <div class="footer__nav-links">
+              <a class="footer__nav-link" href="mailto:CCdoc@123@gmail.com">
+                CCdoc123@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!-- Slick Slider -->
+  <script src="js/slick.min.js"></script>
+
+  <!-- index.js -->
+  <script src="js/index.js"></script>
+</body>
+</html>
